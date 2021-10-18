@@ -27,7 +27,9 @@ export default function skillList() {
   ];
   return (
     <div>
-      <p className="mb-1 text-2xl uppercase font-bold text-gray-800">Skils</p>
+      <p className="mb-1 text-2xl uppercase font-bold text-gray-800 dark:text-white">
+        Skils
+      </p>
       <div className="flex flex-row flex-wrap items-center font-semibold transition-colors duration-200 mb-4">
         {icon.map((item) => {
           return (
