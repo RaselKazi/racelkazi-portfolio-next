@@ -45,7 +45,7 @@ export default function Footer() {
             </div>
           </div>
           <div className="space-y-2 text-sm">
-            <p className="text-base font-bold tracking-wide text-white">
+            <p className=" text-lg font-bold tracking-wide text-white">
               Contacts
             </p>
             <div className="flex">
@@ -85,10 +85,10 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <span className="text-base font-bold tracking-wide text-white">
+            <span className="text-lg font-bold tracking-wide text-white">
               Social
             </span>
-            <div className="flex items-center mt-1 space-x-3">
+            <div className="flex items-center mt-6 space-x-3">
               <a
                 className=" text-2xl  p-2 dark:hover:bg-white text-blue-600  rounded-full border-2 border-blue-600 transition duration-300 dark:hover:text-blue-600 hover:text-white hover:bg-blue-600"
                 target="_blank"
@@ -99,7 +99,7 @@ export default function Footer() {
               <a
                 className=" text-2xl  p-2 dark:hover:bg-white text-red-600  rounded-full border-2 border-red-600 transition duration-300 dark:hover:text-red-600 hover:text-white hover:bg-red-600"
                 target="_blank"
-                href="https://www.facebook.com/freelancer.raselkazi"
+                href="https://www.youtube.com/channel/UCKoutxgYoTdTBnCuxL4f97A"
               >
                 <BsYoutube />
               </a>
@@ -125,10 +125,6 @@ export default function Footer() {
                 <IoLogoWhatsapp />
               </a>
             </div>
-            <p className="mt-4 text-sm text-gray-200">
-              Bacon ipsum dolor amet short ribs pig sausage prosciutto chicken
-              spare ribs salami.
-            </p>
           </div>
         </div>
         <div className="flex  justify-center items-center pt-5 pb-10 border-t">

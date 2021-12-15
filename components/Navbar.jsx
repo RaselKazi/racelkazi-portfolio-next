@@ -6,7 +6,7 @@ import useDarkMode from "../hook/useDarkMode";
 export default function navbar() {
   const [top, setTop] = useState(true);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [colortheme, setTheme] = useDarkMode();
+  const [theme, setTheme] = useDarkMode();
 
   // detect whether user has scrolled the page down by 10px
   useEffect(() => {
@@ -83,10 +83,10 @@ export default function navbar() {
           <ul className="flex items-center hidden space-x-8 lg:flex">
             <li>
               <div
-                onClick={() => setTheme(colortheme)}
+                onClick={() => setTheme(theme === "light" ? "dark" : "light")}
                 className=" cursor-pointer rounded-full border-2 p-2 border-blue-400 text-2xl dark:text-gray-50 text-gray-600 transition duration-200 hover:bg-blue-400 hover:text-white dark:hover:text-gray-700"
               >
-                {colortheme === "light" ? (
+                {theme === "light" ? (
                   <BsFillBrightnessHighFill />
                 ) : (
                   <MdOutlineDarkMode />
@@ -95,12 +95,13 @@ export default function navbar() {
             </li>
             <li>
               <a
-                href=""
-                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-gradient-to-r from-green-600 to-blue-500  hover:from-blue-400  focus:shadow-outline focus:outline-none"
-                aria-label="Sign up"
-                title="Sign up"
+                target="_blank"
+                href="https://drive.google.com/file/d/1fCHGZeAzS5LKclVMB6OYl7G_FK1TVdgd/view?usp=sharing"
+                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-blue-500  hover:bg-blue-400  focus:shadow-outline focus:outline-none"
+                aria-label="Download CV"
+                title="Download CV"
               >
-                Sign up
+                Download CV
               </a>
             </li>
           </ul>

@@ -49,7 +49,7 @@ export default function ContactForm() {
             placeholder="Name"
             {...register("name", { required: true, maxLength: 50 })}
           />
-          <p class="my-2 text-xs italic text-red-500">
+          <p className="my-2 text-xs italic text-red-500">
             {errors.name?.type === "required" && "Please input Your Name"}
           </p>
         </div>
@@ -64,7 +64,7 @@ export default function ContactForm() {
             placeholder="Email"
             {...register("email", { required: true, pattern: /^\S+@\S+$/i })}
           />
-          <p class="my-2 text-xs italic text-red-500">
+          <p className="my-2 text-xs italic text-red-500">
             {errors.Email?.type === "required" && "Please Email is required"}
           </p>
         </div>
@@ -77,10 +77,9 @@ export default function ContactForm() {
 
         <textarea
           className="block w-full h-40 px-4 py-2 text-gray-700 bg-white border border-gray-300 rounded-md dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 focus:border-blue-500 dark:focus:border-blue-500 focus:outline-none focus:ring"
-          spellcheck="true"
           {...register("message", { required: true, max: 300 })}
         ></textarea>
-        <p class="my-2 text-xs italic text-red-500">
+        <p className="my-2 text-xs italic text-red-500">
           {errors.message?.type === "required" && "Please Email is required"}
         </p>
       </div>

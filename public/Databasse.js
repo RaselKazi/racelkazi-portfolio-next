@@ -1,5 +1,25 @@
 export const items = [
   {
+    id: "0",
+    url: "ecom",
+    title: "Smart Shopping ",
+    type: "Smart Shopping is a responsive MERN Stack E-commerce website with an awesome admin dashboard",
+    demo: "https://e-shope-808.herokuapp.com/",
+    source: "https://github.com/RaselKazi/Eshop",
+    catagory: "mern",
+    icon: [
+      "html5-2",
+      "css",
+      "javascript",
+      "react",
+      "redux",
+      "node-js",
+      "express-109",
+      "mongodb-icon-1",
+      "jwt-3",
+    ],
+  },
+  {
     id: "1",
     url: "Apartment_hunt",
     title: "Apartment Hunt",

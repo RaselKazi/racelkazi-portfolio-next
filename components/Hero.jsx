@@ -5,6 +5,7 @@ import { BsYoutube } from "react-icons/bs";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
+
 // import Resumepdf from "../public/racel-kazi-resume.pdf";
 
 export default function Hero() {
@@ -20,6 +21,7 @@ export default function Hero() {
           <path d="M0,0 C48.8902582,6.27314026 86.2235915,9.40971039 112,9.40971039 C137.776408,9.40971039 175.109742,6.27314026 224,0 L224,12.0441132 L0,12.0441132 L0,0 Z" />
         </svg>
       </div>
+
       <div className=" px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
         <div className="relative">
           <div className="px-4 py-16 mx-auto grid gap-10 lg:grid-cols-2">
@@ -53,7 +55,7 @@ export default function Hero() {
                 <a
                   className=" text-2xl  p-2 dark:hover:bg-white text-red-600  rounded-full border-2 border-red-600 transition duration-300 dark:hover:text-red-600 hover:text-white hover:bg-red-600"
                   target="_blank"
-                  href="https://www.facebook.com/freelancer.raselkazi"
+                  href="https://www.youtube.com/channel/UCKoutxgYoTdTBnCuxL4f97A"
                 >
                   <BsYoutube />
                 </a>
@@ -81,40 +83,38 @@ export default function Hero() {
               </div>
 
               <div className=" my-6">
-                <button className="h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-purple-600 hover:bg-purple-800 focus:shadow-outline focus:outline-none mr-4">
-                  {/* <span onClick={() => window.open(Resumepdf)}> */}
+                <a
+                  target="_blank"
+                  href="https://drive.google.com/file/d/1fCHGZeAzS5LKclVMB6OYl7G_FK1TVdgd/view?usp=sharing"
+                  className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-purple-600 hover:bg-purple-800 focus:shadow-outline focus:outline-none mr-4"
+                >
                   Download CV
-                </button>
+                </a>
 
                 <a
                   href="#About"
                   aria-label=""
-                  className="inline-flex items-center font-semibold transition-colors duration-200 text-white rounded-md py-3 px-2 bg-purple-400 hover:bg-purple-500"
+                  className="inline-flex items-center font-semibold transition-colors duration-200 text-purple-500 rounded py-3 px-6  bg-purple-500 hover:bg-purple-800 hover:text-white bg-opacity-25"
                 >
                   About More
-                  <svg
-                    className="inline-block w-3 ml-2"
-                    fill="currentColor"
-                    viewBox="0 0 12 12"
-                  >
-                    <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
-                  </svg>
                 </a>
               </div>
             </div>
 
             <div className="flex items-center justify-center">
               <div className="relative">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75 top-0"></span>
-                <span class="animate-ping absolute top-0 inline-flex h-full w-full rounded-full bg-purple-500 opacity-90"></span>
-                <span class=" animate-ping absolute top-0 inline-flex h-full w-full rounded-full bg-purple-700 opacity-75"></span>
-                <Image
-                  className=" rounded-full"
-                  src="/image/kazi.jpg"
-                  alt="Picture of the author"
-                  width={300}
-                  height={300}
-                />
+                {/* <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75 top-0"></span> */}
+                <div className="rounded-full items-center justify-center">
+                  <div className="rounded-full border-2 border-dashed border-gray-400 dark:border-white w-80 h-80 flex items-center justify-center">
+                    <Image
+                      className="rounded-full"
+                      src="/image/kazi.jpg"
+                      alt="Picture of the author"
+                      width={300}
+                      height={300}
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
