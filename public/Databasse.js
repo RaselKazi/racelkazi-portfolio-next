@@ -25,7 +25,7 @@ export const items = [
     title: "Apartment Hunt",
     type: "Responsive MERN Stack project with firebase authentication and dashboard functionality for customer and admin",
     demo: "https://apartment-hun.web.app/",
-    source: "https://github.com/RaselKazi/apartment-hunt-clien",
+    source: "https://github.com/RaselKazi/-apartment-hunt",
     catagory: "mern",
     icon: [
       "html5-2",
